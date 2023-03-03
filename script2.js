@@ -8,11 +8,11 @@ let c=0;
 function bar(){
     if(c%2==0){
         b.style.display = "block";
-        e.innerHTML="<img id='imgmenu' src='img/close.png' alt=''></img>"
+        e.innerHTML="<img id='imgmenu' src='close.png' alt=''></img>"
     }
     else{
         b.style.display= "none";
-        e.innerHTML="<img id='imgmenu' src='img/menu.png' alt=''></img>"
+        e.innerHTML="<img id='imgmenu' src='menu.png' alt=''></img>"
     }
     c++;
     hidelink()
