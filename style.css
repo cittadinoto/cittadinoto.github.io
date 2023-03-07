@@ -1,6 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
     body {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 1.7;
         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
@@ -40,6 +40,17 @@
         width: 83vw;
         padding-left: 2vw;
         float: left;
+    }
+    #barcontent1 h2{
+        height: 6vh;
+        margin: 0px;
+        padding: 0px;
+        font-size: 5vh;
+        line-height: 8vh;
+    }
+    h2 a{
+        color: #284B63;
+        text-decoration: none;
     }
     
     #barcontent2 {
@@ -85,20 +96,7 @@
         transform-origin: left bottom;
     }
     
-    #title {
-        height: 6vh;
-        margin: 0px;
-        padding: 0px;
-        font-size: 5vh;
-        line-height: 8vh;
-        color: #284B63;
-        text-decoration: none;
-    }
     
-    #title a {
-        color: #284B63;
-        text-decoration: none;
-    }
     /* sidebar */
     
     #sidebar {
@@ -122,9 +120,10 @@
     }
     
     #sidebarcont a {
-        text-decoration: none;
+        display: block;
+        text-decoration: underline;
         color: #FFFFFF;
-        font-size: 3vh;
+        font-size: 4vh;
     }
     
     @keyframes sidebaron {
@@ -158,7 +157,7 @@
         to {
             width: 0vw;
             height: 0vh;
-            top: 92vh;
+            top: 100vh;
             left: 50vw;
             border-radius: 1vh;
             opacity: 0;
@@ -256,7 +255,72 @@
         background: linear-gradient(0deg, rgb(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1)100%);
     }
     
-    @media screen and (min-width: 600px) {
+
+    /* next page button */
+    
+    .nextpage {
+        background-color: #284B63;
+        color: #FFFFFF;
+        height: 4vh;
+        width: 40vw;
+        margin-left: 27.5vw;
+        border: none;
+        border-radius: 10px;
+        margin-top: 2vh;
+    }
+    
+    .nextpage a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    #button1 {
+        position: fixed;
+        bottom: 4vh;
+        margin-left: 30vw;
+    }
+    /* page 2 */
+    
+    #contmain {
+        padding: 5vw;
+        position: relative;
+        top: 11vh;
+    }
+    
+    #contmain p {
+        margin-top: 1vh;
+    }
+
+    #title {
+        font-size: 2em;
+        margin: 0;
+        color: #284B63;
+        padding: 0px;
+        line-height: 5vh;
+    }
+    #subtitle {
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 1.2vh;
+        color: #8d8d8d;
+    }
+    /* login */
+    
+    #SecretLogin {
+        padding: 10px;
+        padding-left: 40px;
+        padding-bottom: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    
+
+    /* media queries */
+
+     @media screen and (min-width: 600px) {
         #bgvid2 {
             display: block;
         }
@@ -264,7 +328,7 @@
             display: none;
         }
         #cont {
-            padding-top: 55vh;
+            padding-top: 70vh;
         }
         #advancment {
             height: 2vw;
@@ -277,58 +341,11 @@
         .advimage {
             height: 2vw;
         }
-    }
-    /* next page button */
-    
-    .nextpage {
-        background-color: #284B63;
-        color: #FFFFFF;
-        height: 4vh;
-        width: 50vw;
-        margin-left: 20vw;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        border: none;
-        border-radius: 10px;
-    }
-    
-    .nextpage a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    #button1 {
-        position: fixed;
-        bottom: 2vh;
-        margin-left: 25vw;
-    }
-    /* page 2 */
-    
-    #contmain {
-        padding: 5vw;
-        position: relative;
-        top: 11vh;
-    }
-    
-    #subtitle {
-        color: #8d8d8d;
-        margin-top: 0%;
-        margin-bottom: 0%;
-        font-size: 5vw;
-    }
-    
-    #contmain p {
-        margin-top: 1vh;
-    }
-    /* ------------------------------------------------------------------------------------- */
-    /* login */
-    
-    #SecretLogin {
-        /* background-color: yellow; */
-        padding: 10px;
-        padding-left: 40px;
-        padding-bottom: 30px;
-        position: absolute;
-        top: 0;
-        left: 0;
+        .nextpage {
+            width: 20vw;
+            margin-left: 35vw;
+        }
+        #button1 {
+            margin-left: 40vw;
+        }
     }
