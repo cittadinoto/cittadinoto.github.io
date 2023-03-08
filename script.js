@@ -79,6 +79,8 @@ function advancment(cont) {
     }
 }
 
+
+
 //secret login
 let key = "pingu66"
 
@@ -86,7 +88,7 @@ var button = document.getElementById("buttonLogin");
 var clickCount = 0;
 
 button.addEventListener("click", function() {
-    clickCount++;
+   clickCount++;
     console.log(clickCount)
 });
 

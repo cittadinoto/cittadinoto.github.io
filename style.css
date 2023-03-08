@@ -14,6 +14,8 @@
         font-family: 'Nunito', sans-serif;
         background-color: #FFFFFF;
     }
+    
+    ​
     /* header */
     
     #bar {
@@ -23,7 +25,6 @@
         top: 0%;
         z-index: 3;
         background-color: #FFFFFF;
-        color: #284B63;
     }
     
     .barcontent {
@@ -41,15 +42,17 @@
         padding-left: 2vw;
         float: left;
     }
-    #barcontent1 h2{
+    
+    #barcontent1 h2 {
         height: 6vh;
         margin: 0px;
         padding: 0px;
         font-size: 5vh;
         line-height: 8vh;
     }
-    h2 a{
-        color: #284B63;
+    
+    h2 a {
+        color: #083D77;
         text-decoration: none;
     }
     
@@ -60,7 +63,7 @@
         margin: 1.5vh 0 1.5vh 0;
         padding: 0px;
         padding-right: 1.5vh;
-        background-color: #FFFFFF;
+        background: transparent;
         border-radius: 10%;
     }
     
@@ -75,10 +78,11 @@
         display: block;
         height: 0.7vh;
         width: 5vh;
-        background: #284B63;
+        background: #083D77;
         border-radius: 9px;
         transition: .25s ease-in-out;
         position: relative;
+        z-index: 1;
     }
     
     #menu span:nth-child(1) {
@@ -95,8 +99,6 @@
         top: 2.1vh;
         transform-origin: left bottom;
     }
-    
-    
     /* sidebar */
     
     #sidebar {
@@ -105,9 +107,10 @@
         left: 45vw;
         width: 10vw;
         height: 5vh;
-        z-index: 100;
+        z-index: 1;
+        opacity: 1;
         border-radius: 1vh;
-        background-color: #284B63;
+        background-color: #083D77;
         display: none;
     }
     
@@ -176,7 +179,7 @@
     }
     
     #advcontent {
-        background-color: #284B63;
+        background-color: #083D77;
         width: 0%;
         position: fixed;
         top: 8vh;
@@ -226,78 +229,122 @@
     
     .bgvid {
         position: fixed;
-        top: 8vh;
+        top: 0vh;
         left: 0%;
         z-index: -10;
         width: 100%;
-        height: 92vh;
+        height: 100vh;
         object-fit: cover;
     }
     
     #bgvid2 {
         display: none;
+        z-index: -10;
     }
     
     #video-wrapper {
         position: fixed;
-        top: 8vh;
-        height: 92vh;
+        top: 0vh;
+        height: 100vh;
         text-align: center;
+        z-index: -9;
     }
     
     #cont {
         position: relative;
-        height: 98vh;
-        padding-top: 70vh;
-        z-index: 100;
+        height: 100vh;
+        padding-top: 75vh;
+        z-index: -8;
         width: 100vw;
         text-align: center;
-        background: linear-gradient(0deg, rgb(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.1)100%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(255, 255, 255, 0) 90%);
     }
-    
-
-    /* next page button */
+    /* next page buttons */
     
     .nextpage {
-        background-color: #284B63;
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        border-radius: 50%;
+        background-color: #083D77;
         color: #FFFFFF;
-        height: 4vh;
-        width: 40vw;
-        margin-left: 27.5vw;
-        border: none;
-        border-radius: 10px;
+        text-align: center;
         margin-top: 2vh;
+        float: right;
+        cursor: pointer;
     }
     
-    .nextpage a {
-        text-decoration: none;
+    .prevpage {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        line-height: 15vw;
+        background-color: #083D77;
+        text-align: center;
         color: #FFFFFF;
+        margin-top: 2vh;
+        float: left;
+        cursor: pointer;
     }
     
     #button1 {
         position: fixed;
         bottom: 4vh;
-        margin-left: 30vw;
+        left: 42.5vw;
     }
-    /* page 2 */
+    /*page 2 */
+    
+    #flexcontainer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    #flexcontainer>div {
+        background-color: #083D77;
+        width: 43%;
+        height: 25vh;
+        border-radius: 1vh;
+        margin-bottom: 3vh;
+        background-image: url(noto.jpg);
+        background-size: 30vh;
+        background-repeat: no-repeat;
+        border: 2px solid #083D77;
+        cursor: pointer;
+    }
+    
+    #flexcontainer>div>p {
+        background-color: #ffffff;
+        position: relative;
+        height: 4vh;
+        top: 21vh;
+        border-bottom-left-radius: 1vh;
+        border-bottom-right-radius: 1vh;
+        margin: 0%;
+        text-align: center;
+        line-height: 4vh;
+    }
+    /*text pages */
     
     #contmain {
         padding: 5vw;
         position: relative;
         top: 11vh;
+        z-index: 0;
     }
     
     #contmain p {
         margin-top: 1vh;
     }
-
+    
     #title {
         font-size: 2em;
         margin: 0;
-        color: #284B63;
+        color: #083D77;
         padding: 0px;
         line-height: 5vh;
     }
+    
     #subtitle {
         font-size: 1em;
         margin-top: 0;
@@ -314,13 +361,12 @@
         top: 0;
         left: 0;
     }
-
-
-    
-
     /* media queries */
-
-     @media screen and (min-width: 600px) {
+    
+    @media screen and (min-width: 600px) {
+        body {
+            font-size: 1.3vw;
+        }
         #bgvid2 {
             display: block;
         }
@@ -342,10 +388,37 @@
             height: 2vw;
         }
         .nextpage {
-            width: 20vw;
-            margin-left: 35vw;
+            width: 3em;
+            height: 3em;
+            line-height: 3em;
+            border-radius: 50%;
+        }
+        .prevpage {
+            width: 3em;
+            height: 3em;
+            line-height: 3em;
+            border-radius: 50%;
         }
         #button1 {
-            margin-left: 40vw;
+            left: 48.05vw;
+        }
+        #flexcontainer>div {
+            width: 30%;
+            height: 30vh;
+            background-size: 40vw;
+        }
+        #flexcontainer>div>p {
+            top: 26vh;
+        }
+    }
+    
+    @media screen and (min-width: 800px) {
+        #flexcontainer>div {
+            width: 30%;
+            height: 35vh;
+            background-size: 35vw;
+        }
+        #flexcontainer>div>p {
+            top: 31vh;
         }
     }
