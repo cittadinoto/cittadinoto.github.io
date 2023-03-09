@@ -74,7 +74,11 @@ function advancment(cont) {
 }
 
 
+<<<<<<< HEAD
 let key = "1234"
+=======
+let key = "pingu66"
+>>>>>>> 41b00b85cefa3455aa2c2ee8f84992313690c2fe
 
 
 
@@ -96,12 +100,19 @@ function login() {
 
     } else {
         alert("la password inserita è errata")
+<<<<<<< HEAD
         if (clickCount == 2) {
+=======
+        if (clickCount == 4) {
+>>>>>>> 41b00b85cefa3455aa2c2ee8f84992313690c2fe
             clickCount = 0
             document.getElementById("clear").style.display = "none"
             document.body.style.backgroundColor = "white"
             document.getElementById("basta").style.visibility = "visible"
+<<<<<<< HEAD
             
+=======
+>>>>>>> 41b00b85cefa3455aa2c2ee8f84992313690c2fe
         }
 
     }
