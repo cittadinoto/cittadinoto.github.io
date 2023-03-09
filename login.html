@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
+    <title>login</title>
+</head>
+
+
+<body>
+    <div id="clear">
+            <div id="form-box">
+                <div id="inputbox">
+                    <h2>Login</h2>
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required id="password">
+                    <label for="">Password</label>
+                    <button onclick="login()" id="buttonLogin">Log in</button>
+                </div>
+            </div>
+    </div>
+
+    <!-- troppi tentativi -->
+
+    <div id="basta">
+        <div id="error-message">
+            <h2>Troppi tentativi di accesso</h2>
+            <p>Si è verificato un problema. Hai provato ad accedere troppe volte alla pagina. Riprova più tardi.</p>
+        </div>
+    </div>
+
+
+    <!-- accesso riuscito -->
+
+    <div id="true">
+        <h1>ok accesso effettuato</h1>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

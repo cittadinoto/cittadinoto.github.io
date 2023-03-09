@@ -1,57 +1,108 @@
-let e=document.getElementById("barcontent2")
-e.addEventListener("click",bar)
-let b=document.getElementById("sidebar")
+function menu() {
+    if (document.querySelector("#menu span:nth-child(2)").style.width != "0%") {
+        let e1 = document.querySelector("#menu span:nth-child(1)");
+        e1.style.transform = "rotate(45deg)"
+        e1.style.left = "1vh"
+        e1.style.top = "0.35vh"
 
-b.style.display= "none"
-let c=0;
 
-function bar(){
-    if(c%2==0){
-        b.style.display = "block";
-        e.innerHTML="<img id='imgmenu' src='close.png' alt=''></img>"
+        let e2 = document.querySelector("#menu span:nth-child(2)");
+        e2.style.width = "0%"
+        e2.style.opacity = "0"
+
+        let e3 = document.querySelector("#menu span:nth-child(3)");
+        e3.style.transform = "rotate(-45deg)";
+        e3.style.left = "1vh"
+        e3.style.top = "2.25vh"
+    } else {
+        let e1 = document.querySelector("#menu span:nth-child(1)");
+        e1.style.transform = "rotate(0deg)";
+        e1.style.top = "0.7vh"
+        e1.style.left = "0px"
+        e1.style.width = "5vh"
+
+        let e2 = document.querySelector("#menu span:nth-child(2)");
+        e2.style.width = "100%"
+        e2.style.opacity = "1"
+
+        let e3 = document.querySelector("#menu span:nth-child(3)");
+        e3.style.transform = "rotate(0deg)";
+        e3.style.top = "2.1vh"
+        e3.style.left = "0px"
+        e3.style.width = "5vh"
     }
-    else{
-        b.style.display= "none";
-        e.innerHTML="<img id='imgmenu' src='menu.png' alt=''></img>"
+    sidebaron();
+};
+
+function sidebaron() {
+    let e = document.getElementById("sidebar")
+    if (document.querySelector("#menu span:nth-child(2)").style.width == "0%") {
+        document.getElementById("sidebarcont").style.display = "block"
+        e.style.display = "block"
+        e.style.animation = "sidebaron 0.7s forwards"
+    } else {
+        e.style.animation = "sidebaroff 0.7s forwards"
+        document.getElementById("sidebarcont").style.display = "none"
+        setTimeout(function() {
+            e.style.display = "none"
+        }, 700);
     }
-    c++;
-    hidelink()
 }
 
-function hidelink(){
-    for(let i=1; i<=5;i++){
-        let v1=document.getElementsByClassName("link"+i);
-        for(let j=0; j<v1.length;j++){
-            v1[j].style.display="none"
+function advancment(cont) {
+    if (screen.width > 600) {
+        let e = document.getElementById("advcontent")
+        if (cont > 6) cont = 0
+        if (cont == 0) e.style.width = "0%"
+        if (cont == 1) e.style.width = "17.1vw"
+        if (cont == 2) e.style.width = "33.7vw"
+        if (cont == 3) e.style.width = "50.3vw"
+        if (cont == 4) e.style.width = "67.1vw"
+        if (cont == 5) e.style.width = "83.5vw"
+        if (cont == 6) e.style.width = "100vw"
+    } else {
+        let e = document.getElementById("advcontent")
+        if (cont > 6) cont = 0
+        if (cont == 0) e.style.width = "0%"
+        if (cont == 1) e.style.width = "20.1vw"
+        if (cont == 2) e.style.width = "36.7vw"
+        if (cont == 3) e.style.width = "53.3vw"
+        if (cont == 4) e.style.width = "70.1vw"
+        if (cont == 5) e.style.width = "86.5vw"
+        if (cont == 6) e.style.width = "100vw"
+    }
+}
+
+
+let key = "1234"
+
+
+
+var button = document.getElementById("buttonLogin");
+var clickCount = 0;
+
+button.addEventListener("click", function() {
+    clickCount++;
+    console.log(clickCount)
+});
+
+function login() {
+    let password = document.getElementById("password").value
+
+    if (password == key) {
+        document.getElementById("clear").style.display = "none"
+        document.body.style.backgroundColor = "white"
+        document.getElementById("true").style.visibility = "visible"
+
+    } else {
+        alert("la password inserita è errata")
+        if (clickCount == 2) {
+            clickCount = 0
+            document.getElementById("clear").style.display = "none"
+            document.body.style.backgroundColor = "white"
+            document.getElementById("basta").style.visibility = "visible"
+            
         }
+
     }
-}
-
-
-function showlink(name){
-    let v3=document.getElementsByClassName(name);
-    for(let i=0; i<v3.length;i++){
-        if(v3[i].style.display=="none"){
-            v3[i].style.display="block";
-            document.getElementById(name).innerHTML="LINK "+ "&#9650;"
-        } 
-        else{
-           v3[i].style.display="none" 
-           document.getElementById(name).innerHTML="LINK "+ "&#9660;"
-        } 
-    }
-}
-
-
-function advancment(cont){
-    let e=document.getElementById("advcontent")
-    if(cont>6)cont=0
-    if(cont==0)e.style.width="0%"
-    if(cont==1) e.style.width="18%"
-    if(cont==2) e.style.width="35%"
-    if(cont==3) e.style.width="51%"
-    if(cont==4) e.style.width="68%"
-    if(cont==5) e.style.width="84%"
-    if(cont==6) e.style.width="100%"
-    cont++
 }
