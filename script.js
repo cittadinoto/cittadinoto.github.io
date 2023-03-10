@@ -1,3 +1,4 @@
+
 //menu aniamtion
 function menu() {
     if (document.querySelector("#menu span:nth-child(2)").style.width != "0%") {
@@ -80,49 +81,47 @@ function advancment(cont) {
 
 //  slideshow
 
-let cont1 = 0;
-let cont2 = 0;
-let cont3 = 0;
-let v = [
+let cont1=0;
+let cont2=0;
+let cont3=0;
+let v=[
     "photo1.jpg",
     "photo2.jpg",
     "photo3.jpg",
 ]
-
-function nextimg(n) {
-    if (n == 1) {
+function nextimg(n){
+    if(n==1){
         cont1++;
-        if (cont1 == 3) cont1 = 0
-        document.getElementById("photo1").innerHTML = "<img src=" + "'" + v[cont1] + "'" + ">"
+        if(cont1==3) cont1=0
+        document.getElementById("photo1").innerHTML="<img src="+"'"+v[cont1]+"'"+">"
     }
-    if (n == 2) {
+    if(n==2){
         cont2++;
-        if (cont2 == 3) cont2 = 0
-        document.getElementById("photo2").innerHTML = "<img src=" + "'" + v[cont2] + "'" + ">"
+        if(cont2==3) cont2=0
+        document.getElementById("photo2").innerHTML="<img src="+"'"+v[cont2]+"'"+">"
     }
-    if (n == 3) {
+    if(n==3){
         cont3++;
-        if (cont3 == 3) cont3 = 0
-        document.getElementById("photo3").innerHTML = "<img src=" + "'" + v[cont3] + "'" + ">"
+        if(cont3==3) cont3=0
+        document.getElementById("photo3").innerHTML="<img src="+"'"+v[cont3]+"'"+">"
     }
 
 }
-
-function previmg(n) {
-    if (n == 1) {
+function previmg(n){
+    if(n==1){
         cont1--;
-        if (cont1 == 0) cont1 = 3
-        document.getElementById("photo1").innerHTML = "<img src=" + "'" + v[cont1] + "'" + ">"
+        if(cont1==0) cont1=3
+        document.getElementById("photo1").innerHTML="<img src="+"'"+v[cont1]+"'"+">"
     }
-    if (n == 2) {
+    if(n==2){
         cont2--;
-        if (cont2 == 0) cont2 = 3
-        document.getElementById("photo2").innerHTML = "<img src=" + "'" + v[cont2] + "'" + ">"
+        if(cont2==0) cont2=3
+        document.getElementById("photo2").innerHTML="<img src="+"'"+v[cont2]+"'"+">"
     }
-    if (n == 3) {
+    if(n==3){
         cont3--;
-        if (cont3 == 0) cont3 = 3
-        document.getElementById("photo3").innerHTML = "<img src=" + "'" + v[cont3] + "'" + ">"
+        if(cont3==0) cont3=3
+        document.getElementById("photo3").innerHTML="<img src="+"'"+v[cont3]+"'"+">"
     }
 }
 
@@ -135,7 +134,7 @@ var button = document.getElementById("buttonLogin");
 var clickCount = 0;
 
 button.addEventListener("click", function() {
-    clickCount++;
+   clickCount++;
     console.log(clickCount)
 });
 
