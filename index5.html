@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palazzo Ducezio</title>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="advancment">
+        <div id="advcontent">
+            <img src="circle.png" class="advimage" id="advimage1">
+            <img src="circle.png" class="advimage" id="advimage2">
+            <img src="circle.png" class="advimage" id="advimage3">
+            <img src="circle.png" class="advimage" id="advimage4">
+            <img src="circle.png" class="advimage" id="advimage5">
+            <img src="circle.png" class="advimage" id="advimage6">
+            <img src="circle.png" class="advimage" id="advimage7">
+            <img src="circle.png" class="advimage" id="advimage8">
+            <img src="circle.png" class="advimage" id="advimage9">
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+    <div id="contmain">
+        <h2 id="title">Palazzo Ducezio</h2>
+        <br>
+        <h4 id="subtitle">La Storia</h4>
+        <p>Il Palazzo Ducezio è un importante edificio storico situato nella città di Noto. La sua costruzione risale al XVIII secolo, durante il periodo barocco della città. Il palazzo fu commissionato da Domenico Trigona, il barone di Sant'Alfano, che
+            voleva costruire una residenza signorile che potesse essere paragonata alle altre dimore nobiliari della città. La costruzione fu affidata all'architetto Vincenzo Sinatra, che aveva già lavorato a Noto per la costruzione di altri edifici barocchi.
+            Il palazzo fu costruito sulla base di un precedente edificio medievale, di cui rimanevano alcune strutture. La costruzione richiese molti anni di lavoro, a causa delle difficoltà finanziarie incontrate dal committente. Il Palazzo Ducezio è
+            stato oggetto di numerosi interventi di ristrutturazione e restauro nel corso dei secoli, a causa dei danni subiti durante i terremoti e le guerre. Nel corso della Seconda Guerra Mondiale, l'edificio subì gravi danni a causa dei bombardamenti
+            aerei. Nel 1948 il palazzo fu acquistato dal comune di Noto, che lo trasformò in municipio. Fu dedicato a Giuseppe Ducezio, eroe nazionale che aveva combattuto contro gli invasori spagnoli nel XVII secolo. Oggi il Palazzo Ducezio è un importante
+            centro culturale e turistico di Noto, ospitando mostre, eventi e manifestazioni culturali. L'edificio è stato restaurato e riportato al suo splendore barocco, con i suoi interni ornati da pregevoli stucchi e affreschi.</p>
+
+        <br>
+        <h4 id="subtitle">Curiosità</h4>
+        <ol>
+            <li>Il palazzo deve il suo nome a Giuseppe Ducezio, un eroe locale che combatté contro gli spagnoli nel XVII secolo. Il nome "Ducezio" significa "Duca" in lingua siciliana.</li>
+            <li>Durante la Seconda Guerra Mondiale, il palazzo fu danneggiato da un bombardamento aereo. La cupola centrale fu distrutta, ma fu poi ricostruita con l'aiuto di una copia della statua della Madonna delle Grazie.</li>
+            <li>All'interno del palazzo si trova una sala dedicata a Vincenzo Sinatra, l'architetto che lo progettò. La sala contiene numerosi documenti e disegni che illustrano la sua carriera.</li>
+            <li>Il palazzo è stato utilizzato come location per numerose produzioni cinematografiche, tra cui il film del 1999 "Teatro di guerra" diretto da Mario Martone.</li>
+            <li>Durante la Notte Bianca di Noto, l'edificio è aperto al pubblico per visitare i suoi interni e ammirare gli spettacoli di musica e danza che si tengono all'interno delle sue sale.</li>
+        </ol>
+
+        <br>
+
+        <div class="nextpage" onclick="window.open('index6.html', '_self')"> &rarr;</div>
+        <div class="prevpage" onclick="window.open('index4.html', '_self')"> &larr;</div>
+
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        advancment(5)
+    </script>
+</body>
+
+</html>

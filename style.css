@@ -114,6 +114,7 @@ h2 a {
     border-radius: 1vh;
     background-color: #083D77;
     display: none;
+    overflow: scroll;
 }
 
 #sidebarcont {
@@ -128,7 +129,29 @@ h2 a {
     display: block;
     text-decoration: underline;
     color: #FFFFFF;
-    font-size: 4vh;
+    font-size: 1.5em;
+}
+
+#hidden {
+    display: none;
+    text-align: start;
+    text-decoration: none;
+    padding-left: 20%;
+    animation-name: hiddenon;
+    animation-duration: 0.8s;
+}
+
+#hidden li a {
+    text-decoration: none;
+}
+
+@keyframes hiddenon {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes sidebaron {
@@ -211,23 +234,39 @@ h2 a {
 }
 
 #advimage1 {
-    left: 15.1vw;
+    left: 7.5vw;
 }
 
 #advimage2 {
-    left: 31.7vw;
+    left: 17.5vw;
 }
 
 #advimage3 {
-    left: 48.3vw;
+    left: 27.5vw;
 }
 
 #advimage4 {
-    left: 65.1vw;
+    left: 37.5vw;
 }
 
 #advimage5 {
-    left: 81.5vw;
+    left: 47.5vw;
+}
+
+#advimage6 {
+    left: 57.5vw;
+}
+
+#advimage7 {
+    left: 67.5vw;
+}
+
+#advimage8 {
+    left: 77.5vw;
+}
+
+#advimage9 {
+    left: 87.5vw;
 }
 
 
@@ -279,6 +318,7 @@ h2 a {
     position: fixed;
     bottom: 4vh;
     left: 42.5vw;
+    z-index: 0;
 }
 
 
@@ -311,7 +351,7 @@ h2 a {
 }
 
 
-/*page 2 */
+/*argomenti */
 
 #flexcontainer {
     display: flex;
@@ -325,8 +365,7 @@ h2 a {
     height: 25vh;
     border-radius: 1vh;
     margin-bottom: 3vh;
-    background-image: url(noto.jpg);
-    background-size: 30vh;
+    background-size: 22vh;
     background-repeat: no-repeat;
     border: 2px solid #083D77;
     cursor: pointer;
@@ -342,6 +381,7 @@ h2 a {
     margin: 0%;
     text-align: center;
     line-height: 4vh;
+    font-size: 0.8em;
 }
 
 
@@ -376,7 +416,7 @@ h2 a {
 
 .slideshow {
     width: 90%;
-    height: 34vh;
+    height: 40vh;
     text-align: center;
     border-radius: 1vh;
     background-color: #083D77;
@@ -388,17 +428,24 @@ h2 a {
 
 .slideshow p {
     color: #FFFFFF;
-    width: 100%;
-    font-size: 1.5em;
+    width: 90%;
+    font-size: 1em;
     margin: 0%;
-    line-height: 1.5em;
+    line-height: 1em;
+    margin: 1em;
 }
 
 #photo1 img,
 #photo2 img,
-#photo3 img {
+#photo3 img,
+#photo4 img,
+#photo5 img,
+#photo6 img,
+#photo7 img,
+#photo8 img,
+#photo9 img {
     width: 100%;
-    height: 21vh;
+    height: 24vh;
     border-radius: 1vh;
 }
 
@@ -459,12 +506,8 @@ h2 a {
 /* login */
 
 #SecretLogin {
-    padding: 10px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -547,6 +590,16 @@ h2 a {
     #photo3 img {
         width: 90%;
         height: 25vh;
+    }
+    #hidden {
+        position: relative;
+        left: 300px;
+        display: none;
+        text-align: start;
+        text-decoration: none;
+        padding-left: 20%;
+        animation-name: hiddenon;
+        animation-duration: 0.8s;
     }
 }
 

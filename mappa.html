@@ -53,6 +53,14 @@
             text-align: center;
         }
         
+        #mapbutton:hover {
+            cursor: pointer;
+        }
+        
+        #mapbutton2:hover {
+            cursor: pointer;
+        }
+        
         @media screen and (min-width: 600px) {
             #mapbutton {
                 width: 20%;
@@ -83,11 +91,23 @@
 
     <div id="sidebar">
         <ul id="sidebarcont">
-            <a href="login.html" target="_blank" id="SecretLogin"></a>
 
             <li><a href="index.html">Home</a></li>
-            <li><a href="index2.html">Argomenti</a></li>
-            <li><a href="index3.html">Pagina 3</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
             <li><a href="photos.html">Foto</a></li>
             <li><a href="mappa.html">Mappa</a></li>
 
@@ -101,7 +121,7 @@
         Apri su Google Maps
     </div>
     <div id="mapbutton2" onclick="window.open('https://www.google.com/maps/d/u/0/embed?mid=1OYRbg9Q_5h0ZpiWit7JzasTdh4y04NU&ehbc=2E312F&ll=36.890985105424065%2C15.070786049999976&z=18')">
-        Visualizza Itineratio
+        Visualizza Itinerario
     </div>
 
 
@@ -186,6 +206,28 @@
 
 
     <script src="script.js"></script>
+
+    <script>
+        function sidebaron() {
+            let e = document.getElementById("sidebar")
+            if (document.querySelector("#menu span:nth-child(2)").style.width == "0%") {
+                document.getElementById("sidebarcont").style.display = "block"
+                e.style.display = "block"
+                e.style.animation = "sidebaron 0.6s forwards"
+                document.getElementById("mapbutton").style.display = "none"
+                document.getElementById("mapbutton2").style.display = "none"
+
+            } else {
+                e.style.animation = "sidebaroff 0.6s forwards"
+                document.getElementById("sidebarcont").style.display = "none"
+                setTimeout(function() {
+                    e.style.display = "none"
+                }, 600);
+                document.getElementById("mapbutton").style.display = "block"
+                document.getElementById("mapbutton2").style.display = "block"
+            }
+        }
+    </script>
 </body>
 
 </html>

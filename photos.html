@@ -36,20 +36,32 @@
 
     <div id="sidebar">
         <ul id="sidebarcont">
-            <a href="login.html" target="_blank" id="SecretLogin"></a>
 
             <li><a href="index.html">Home</a></li>
-            <li><a href="index2.html">Argomenti</a></li>
-            <li><a href="index3.html">Pagina 3</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
             <li><a href="photos.html">Foto</a></li>
             <li><a href="mappa.html">Mappa</a></li>
 
         </ul>
     </div>
-
     <div id="contmain" class="contslide">
+
         <div class="slideshow">
-            <p>titolo</p>
+            <p>Porta Ferdinandea</p>
             <div class="photo">
                 <div id="photo1">
                     <img src="photo1.jpg">
@@ -67,7 +79,7 @@
         </div>
 
         <div class="slideshow">
-            <p>titolo</p>
+            <p>Chiesa san Francesco</p>
             <div class="photo">
                 <div id="photo2">
                     <img src="photo2.jpg">
@@ -85,7 +97,7 @@
         </div>
 
         <div class="slideshow">
-            <p>titolo</p>
+            <p>Chiesa santa Maria</p>
             <div class="photo">
                 <div id="photo3">
                     <img src="photo3.jpg">
@@ -99,6 +111,113 @@
 
                 <div class="nextimg" onclick="nextimg(3)"> &rarr;</div>
                 <div class="previmg" onclick="previmg(3)"> &larr;</div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <p>Palazzo Ducezio</p>
+            <div class="photo">
+                <div id="photo4">
+                    <img src="photo4.jpg">
+                </div>
+
+                <div class="imgcont" id="imgcont4">
+                    <div class="imgs" id="cont40"></div>
+                    <div class="imgs" id="cont41"></div>
+                    <div class="imgs" id="cont42"></div>
+                </div>
+
+                <div class="nextimg" onclick="nextimg(4)"> &rarr;</div>
+                <div class="previmg" onclick="previmg(4)"> &larr;</div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <p>Cattedrale di san Nicolò</p>
+            <div class="photo">
+                <div id="photo5">
+                    <img src="photo5.jpeg">
+                </div>
+
+                <div class="imgcont" id="imgcont5">
+                    <div class="imgs" id="cont50"></div>
+                    <div class="imgs" id="cont51"></div>
+                    <div class="imgs" id="cont52"></div>
+                </div>
+
+                <div class="nextimg" onclick="nextimg(5)"> &rarr;</div>
+                <div class="previmg" onclick="previmg(5)"> &larr;</div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <p>Via Corrado Nicolaci</p>
+            <div class="photo">
+                <div id="photo6">
+                    <img src="photo6b.webp">
+                </div>
+
+                <div class="imgcont" id="imgcont6">
+                    <div class="imgs" id="cont60"></div>
+                    <div class="imgs" id="cont61"></div>
+                    <div class="imgs" id="cont62"></div>
+                </div>
+
+                <div class="nextimg" onclick="nextimg(6)"> &rarr;</div>
+                <div class="previmg" onclick="previmg(6)"> &larr;</div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <p>Chiesa di San Carlo</p>
+            <div class="photo">
+                <div id="photo7">
+                    <img src="photo7.jpg">
+                </div>
+
+                <div class="imgcont" id="imgcont7">
+                    <div class="imgs" id="cont70"></div>
+                    <div class="imgs" id="cont71"></div>
+                </div>
+
+                <div class="nextimg" onclick="nextimg(7)"> &rarr;</div>
+                <div class="previmg" onclick="previmg(7)"> &larr;</div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <p>Chiesa di san Domenico</p>
+            <div class="photo">
+                <div id="photo8">
+                    <img src="photo8.jpg">
+                </div>
+
+                <div class="imgcont" id="imgcont8">
+                    <div class="imgs" id="cont80"></div>
+                    <div class="imgs" id="cont81"></div>
+                    <div class="imgs" id="cont82"></div>
+                </div>
+
+                <div class="nextimg" onclick="nextimg(8)"> &rarr;</div>
+                <div class="previmg" onclick="previmg(8)"> &larr;</div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <p>Teatro</p>
+            <div class="photo">
+                <div id="photo9">
+                    <img src="photo9.jpg">
+                </div>
+
+                <div class="imgcont" id="imgcont9">
+                    <div class="imgs" id="cont90"></div>
+                    <div class="imgs" id="cont91"></div>
+                    <div class="imgs" id="cont92"></div>
+                </div>
+
+                <div class="nextimg" onclick="nextimg(9)"> &rarr;</div>
+                <div class="previmg" onclick="previmg(9)"> &larr;</div>
             </div>
         </div>
 

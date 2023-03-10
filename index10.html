@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teatro Tina di Lorenzo</title>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="advancment">
+        <div id="advcontent">
+            <img src="circle.png" class="advimage" id="advimage1">
+            <img src="circle.png" class="advimage" id="advimage2">
+            <img src="circle.png" class="advimage" id="advimage3">
+            <img src="circle.png" class="advimage" id="advimage4">
+            <img src="circle.png" class="advimage" id="advimage5">
+            <img src="circle.png" class="advimage" id="advimage6">
+            <img src="circle.png" class="advimage" id="advimage7">
+            <img src="circle.png" class="advimage" id="advimage8">
+            <img src="circle.png" class="advimage" id="advimage9">
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+    <div id="contmain">
+        <h2 id="title">Teatro Tina di Lorenzo</h2>
+        <br>
+        <h4 id="subtitle">La Storia</h4>
+        <p>Il teatro fu costruito nel 1870, dopo il terremoto del 1693 che distrusse gran parte della città, grazie alla donazione di Tina di Lorenzo, una nobile del luogo. La sua costruzione fu affidata all'architetto Vincenzo Sinatra, il quale si ispirò
+            ai modelli dell'epoca per creare un edificio dallo stile neoclassico. Il teatro ha una capienza di circa 500 posti a sedere e presenta una struttura a ferro di cavallo, tipica dei teatri dell'epoca. L'interno del teatro è decorato con stucchi
+            e affreschi di grande valore artistico, realizzati da artisti locali dell'epoca. Nel corso degli anni, il Teatro Tina di Lorenzo è stato il centro della vita culturale della città di Noto, ospitando numerose rappresentazioni teatrali, concerti
+            e spettacoli di danza. Tra i grandi artisti che si sono esibiti sul palcoscenico del teatro ci sono stati Giuseppe Verdi, Eleonora Duse e Vittorio Gassman. Durante la Seconda Guerra Mondiale, il teatro subì danni notevoli a causa dei bombardamenti,
+            ma fu successivamente restaurato e riaperto al pubblico negli anni '50. Oggi il Teatro Tina di Lorenzo è ancora attivo e continua a ospitare numerosi eventi culturali e spettacoli, mantenendo intatto il suo fascino e la sua importanza storica
+            e culturale per la città di Noto.</p>
+        <br>
+        <h4 id="subtitle">Il Nome</h4>
+        <p>Il Teatro Tina di Lorenzo prende il nome da Tina di Lorenzo, la nobildonna che donò il denaro necessario per la sua costruzione nel 1870. Tina di Lorenzo era una figura molto importante nella vita sociale e culturale di Noto, nota per la sua generosità
+            e per il suo amore per l'arte e la cultura. La sua donazione permise la costruzione di un teatro di grande bellezza e valore storico e culturale per la città, che ancora oggi rappresenta uno dei principali luoghi di aggregazione e di spettacolo
+            per i cittadini e i visitatori di Noto.</p>
+        <br>
+        <h4 id="subtitle">Spettacoli, Opere, Concerti</h4>
+        <p>All'interno del Teatro Tina di Lorenzo vengono organizzati numerosi spettacoli e rappresentazioni, che spaziano dalle rappresentazioni teatrali, alle opere liriche, ai concerti di musica classica e contemporanea, fino a spettacoli di danza e di
+            cabaret. Il teatro ospita anche eventi culturali e artistici, come mostre fotografiche, esposizioni d'arte e presentazioni di libri. Inoltre, il Teatro Tina di Lorenzo è stato scelto come location per diversi festival e rassegne di spettacoli,
+            tra cui il Festival di Noto, uno dei più importanti eventi culturali della città, che si tiene ogni estate e che vede la partecipazione di artisti di fama nazionale e internazionale. Il Teatro Tina di Lorenzo rappresenta quindi un importante
+            punto di riferimento per la vita culturale della città di Noto e dell'intera Sicilia, e costituisce un luogo di grande interesse storico, artistico e culturale.</p>
+
+        <br>
+
+
+        <div class="prevpage" onclick="window.open('index9.html', '_self')"> &larr;</div>
+
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        advancment(10)
+    </script>
+</body>
+
+</html>

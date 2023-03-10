@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cattedrale San Nicolò</title>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="advancment">
+        <div id="advcontent">
+            <img src="circle.png" class="advimage" id="advimage1">
+            <img src="circle.png" class="advimage" id="advimage2">
+            <img src="circle.png" class="advimage" id="advimage3">
+            <img src="circle.png" class="advimage" id="advimage4">
+            <img src="circle.png" class="advimage" id="advimage5">
+            <img src="circle.png" class="advimage" id="advimage6">
+            <img src="circle.png" class="advimage" id="advimage7">
+            <img src="circle.png" class="advimage" id="advimage8">
+            <img src="circle.png" class="advimage" id="advimage9">
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+    <div id="contmain">
+        <h2 id="title">Cattedrale San Nicolò</h2>
+        <br>
+        <h4 id="subtitle">La Storia</h4>
+        <p>La Cattedrale di San Nicolò è una delle chiese più importanti di Noto. La sua costruzione risale al XVIII secolo, durante il periodo barocco della città. La prima chiesa di San Nicolò risale al XIII secolo ed era situata vicino all'odierna cattedrale.
+            Nel corso dei secoli, la chiesa fu ricostruita più volte a causa dei terremoti e delle guerre. Nel XVII secolo fu ricostruita in stile barocco, ma un terremoto nel 1693 la distrusse completamente insieme alla maggior parte della città di Noto.
+            La ricostruzione della città e della cattedrale fu affidata all'architetto Rosario Gagliardi, che progettò una nuova chiesa in stile barocco siciliano. La costruzione della cattedrale richiese circa 30 anni e fu completata nel 1776. La facciata
+            della cattedrale presenta una serie di decorazioni in stile barocco, tra cui una serie di colonne e statue di santi. L'interno è caratterizzato da una serie di affreschi e decorazioni barocche, tra cui una serie di dipinti di Olivio Sozzi
+            e Antonio Mazza. Nel corso dei secoli, la cattedrale di San Nicolò è stata oggetto di numerosi restauri e ristrutturazioni, tra cui il rifacimento della cupola centrale dopo i danni subiti durante la Seconda Guerra Mondiale. Oggi la cattedrale
+            di San Nicolò è uno dei principali luoghi di culto di Noto e una popolare attrazione turistica per i visitatori che ammirano la sua architettura e le sue opere d'arte barocche.</p>
+        <br>
+        <h4 id="subtitle">Curiosità</h4>
+        <ol>
+            <li>Nel 2002, la cattedrale è stata dichiarata Patrimonio dell'Umanità dall'UNESCO insieme ad altre chiese barocche di Noto, in quanto rappresenta un esempio straordinario di architettura barocca del XVIII secolo.</li>
+            <li>All'interno della cattedrale si trova la statua di San Nicolò, il santo patrono di Noto, che viene portata in processione durante le celebrazioni religiose.</li>
+            <li>La cattedrale è stata danneggiata dai terremoti in diverse occasioni nel corso dei secoli, tra cui il terremoto del 1990. In seguito a questi eventi sismici, sono stati effettuati importanti lavori di restauro per preservare l'edificio.</li>
+            <li>La cattedrale ospita una serie di opere d'arte barocca, tra cui il dipinto di San Corrado Confalonieri, il patrono di Noto, opera di Antonino Bagnato.</li>
+            <li>La cattedrale di San Nicolò è stata scelta come luogo di riprese per la serie televisiva italiana "Il Commissario Montalbano". In particolare, la chiesa è apparsa nella puntata "Il Giro di Boa".</li>
+        </ol>
+        <br>
+
+        <div class="nextpage" onclick="window.open('index7.html', '_self')"> &rarr;</div>
+        <div class="prevpage" onclick="window.open('index5.html', '_self')"> &larr;</div>
+
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        advancment(6)
+    </script>
+</body>
+
+</html>

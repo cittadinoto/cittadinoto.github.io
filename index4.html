@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chiesa Maria Assunta</title>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="advancment">
+        <div id="advcontent">
+            <img src="circle.png" class="advimage" id="advimage1">
+            <img src="circle.png" class="advimage" id="advimage2">
+            <img src="circle.png" class="advimage" id="advimage3">
+            <img src="circle.png" class="advimage" id="advimage4">
+            <img src="circle.png" class="advimage" id="advimage5">
+            <img src="circle.png" class="advimage" id="advimage6">
+            <img src="circle.png" class="advimage" id="advimage7">
+            <img src="circle.png" class="advimage" id="advimage8">
+            <img src="circle.png" class="advimage" id="advimage9">
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+    <div id="contmain">
+        <h2 id="title">Chiesa Maria Assunta</h2>
+        <br>
+        <h4 id="subtitle">La Storia</h4>
+        <p>Ufficialmente denominata come chiesa di Santa Maria Assunta, la chiesa di Santa Chiara rappresenta un altro esempio di architettura barocca di altissimo livello. Progettata dall’architetto siracusano Rosario Gagliardi nel 1730, fu completata nel
+            1758 ed annessa al monastero oggi sede del Museo Civico di Noto. La “vera” facciata della chiesa di Santa Chiara era situata nel Corso Vittorio Emanuele e si presenta con un portale sormontato da un’arcata spezzata, dove al centro spiccava
+            una finestra con un grande timpano circolare arricchito da merlature. Dopo un lavoro di sbancamento del terreno effettuato nel corso dell’800, questo ingresso si ritrovò sopraelevato rispetto al livello stradale, divenendo di fatto impraticabile.
+            Lo stesso avvenne anche per il portale del Convento, ormai murato ma facilmente individuabile dalle sontuose merlature barocche e pinnacoli piramidali ancora presenti. L’attuale facciata a forma rettangolare ha il portale d’ingresso situato
+            su una piccola scalinata, in via Capponi. Questo è inquadrato da due imponenti colonne di stile tuscanino, ognuna delle quali è sormontata da una sorta di coppa in pietra iblea. Più in alto troviamo la torre campanaria, ornata agli angoli
+            da due capitelli. La pianta centrale è di forma ellittica, ispirata al modello delle chiese romane del periodo cinquecentesco e seicentesco. L’interno della chiesa, con le sue numerose decorazioni, putti e stucchi, è considerato uno dei più
+            importanti dell’intera Sicilia per lo stile architettonico barocco. Presenta una sola navata di forma ovoidale, contornata da 12 colonne in pietra. Su ogni colonna sono presenti le statue degli Apostoli, eseguite dal decoratore e stuccatore
+            <a href="login.html" target="_blank" id="SecretLogin">Basile</a>. Il vestibolo d’accesso è caratterizzato da un soffitto in legno, dove è posto il dipinto raffigurante “l’Assunzione di Maria”. Più in alto troviamo il coro in legno, dipinto
+            e decorato con intarsi. Negli altari laterali della navata di destra troviamo il dipinto raffigurante Santa Chiara e la pala ottocentesca raffigurante San Benedetto e Santa Scolastica, del pittore palermitano Salvatore Lo Forte. Negli altari
+            di sinistra troviamo invece una delle opere più importanti della provincia aretusea: la statua della Madonna col Bambino, risalente al ‘500, e proveniente da Noto Antica. L’Altare maggiore rappresenta un inno al barocco: fini merlature scolpite
+            a bassorilievo presentati da stucchi policromi. Inserita in questo contesto troviamo la tela raffigurante “L’Assunzione di Maria” del XVIII secolo.</p>
+        <br>
+
+        <div class="nextpage" onclick="window.open('index5.html', '_self')"> &rarr;</div>
+        <div class="prevpage" onclick="window.open('index3.html', '_self')"> &larr;</div>
+
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        advancment(4)
+    </script>
+</body>
+
+</html>
