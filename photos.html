@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Galleria fotografica</title>
+
+    <style>
+        .nextpage {
+            width: 15vw;
+            height: 15vw;
+            line-height: 15vw;
+            border-radius: 50%;
+            background-color: #083D77;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 2vh;
+            float: right;
+            cursor: pointer;
+            margin-right: 2vh;
+        }
+        
+        .prevpage {
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            line-height: 15vw;
+            background-color: #083D77;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 2vh;
+            float: left;
+            cursor: pointer;
+            margin-left: 2vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="advancment">
+        <div id="advcontent">
+            <img src="circle.png" class="advimage" id="advimage1">
+            <img src="circle.png" class="advimage" id="advimage2">
+            <img src="circle.png" class="advimage" id="advimage3">
+            <img src="circle.png" class="advimage" id="advimage4">
+            <img src="circle.png" class="advimage" id="advimage5">
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+            <a href="login.html" target="_blank" id="SecretLogin"></a>
+
+            <a href="index.html">Home</a>
+            <a href="index2.html">Pagina 2</a>
+            <a href="index3.html">Pagina 3</a>
+            <a href="mappa.html">Mappa</a>
+            <a href="photos.html">Foto</a>
+        </ul>
+    </div>
+
+
+    <div class="slideshow">
+        <p>titolo</p>
+        <div class="photo">
+            <div id="photo1">
+                <img src="photo1.jpg">
+            </div>
+            <div class="nextimg" onclick="nextimg(1)"> &rarr;</div>
+            <div class="previmg" onclick="previmg(1)"> &larr;</div>
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <p>titolo</p>
+        <div class="photo">
+            <div id="photo2">
+                <img src="photo1.jpg">
+            </div>
+            <div class="nextimg" onclick="nextimg(2)"> &rarr;</div>
+            <div class="previmg" onclick="previmg(2)"> &larr;</div>
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <p>titolo</p>
+        <div class="photo">
+            <div id="photo3">
+                <img src="photo1.jpg">
+            </div>
+            <div class="nextimg" onclick="nextimg(3)"> &rarr;</div>
+            <div class="previmg" onclick="previmg(3)"> &larr;</div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="nextpage" onclick="window.open('index3.html', '_self')"> &rarr;</div>
+    <div class="prevpage" onclick="window.open('index.html', '_self')"> &larr;</div>
+    <br><br>
+
+
+    <script src="script.js"></script>
+    <script>
+        advancment(1)
+    </script>
+</body>
+
+</html>

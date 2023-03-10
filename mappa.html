@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mappa di Noto</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #barcontent1 {
+            border-bottom: 5px solid #083D77;
+            width: 100%;
+        }
+        
+        #barcontent2 {
+            position: absolute;
+            right: 0;
+        }
+        
+        #itinerario {
+            position: absolute;
+            right: 85px;
+            top: -15px;
+        }
+        
+        #itinerario2 {
+            visibility: hidden;
+        }
+        
+        @media screen and (max-width: 600px) {
+            #itinerario {
+                visibility: hidden;
+            }
+            #itinerario2 {
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+            <h4 id="itinerario"><a href="https://www.google.com/maps/d/embed?mid=1OYRbg9Q_5h0ZpiWit7JzasTdh4y04NU&ehbc=2E312F" target="_blank">Visualizza itinerario</a></h4>
+        </div>
+
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+            <a href="login.html" target="_blank" id="SecretLogin"></a>
+
+            <a href="index.html">Home</a>
+            <a href="index2.html">Tappe</a>
+            <a href="#">Cosa vedere</a>
+            <a href="mappa.html">Mappa</a>
+            <a href="photos.html">Foto</a>
+            <br><br><br><br>
+            <a id="itinerario2" href="https://www.google.com/maps/d/embed?mid=1OYRbg9Q_5h0ZpiWit7JzasTdh4y04NU&ehbc=2E312F" target="_blank">Visualizza itinerario</a>
+
+        </ul>
+    </div>
+
+
+    <!-- mappa -->
+    <div id="map"></div>
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZmF6ZWx1Y3ExIiwiYSI6ImNsZjJib3p3OTBoMWEzcm55ZTVnbTFmOTUifQ.HAwtFsb8DshwGztgQd9bHA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/fazelucq1/clf2buhyn002z01mroc2oy4pz/draft', // style URL
+            center: [15.072269, 36.892246],
+            bearing: 17.62,
+            zoom: 13.81,
+            pitch: 0.00
+        });
+
+        // markers
+        //----------------------------------------------------------------
+        // porta ferdinandea
+        const marker1 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.073834, 36.890048])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // chiesa san francesco d'assisi
+        const marker2 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.072355, 36.890509])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // chiesa santa maria assoluta
+        const marker3 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.071652, 36.890614])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // palazzo ducezio
+        const marker4 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.070626, 36.890905])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // cattedrale di san nicolo
+        const marker5 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.071058, 36.891305])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // chiesa san carlo
+        const marker6 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.069415, 36.891251])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // via corrado nicolaci
+        const marker7 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.069811, 36.891525])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // fontana chiesa san domenico
+        const marker8 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.068163, 36.891752])
+            .addTo(map);
+        //----------------------------------------------------------------
+        // teatro tina di lorenzo
+        const marker9 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.067547, 36.891295])
+            .addTo(map);
+    </script>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
