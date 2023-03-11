@@ -92,7 +92,7 @@ function advancment(cont) {
         let e = document.getElementById("advcontent")
         if (cont > 10) cont = 0
         if (cont == 0) e.style.width = "0%"
-        if (cont == 1) e.style.width = "12.5vw"
+        if (cont == 1) e.style.width = "12.49vw"
         if (cont == 2) e.style.width = "22.5vw"
         if (cont == 3) e.style.width = "32.5vw"
         if (cont == 4) e.style.width = "42.5vw"
