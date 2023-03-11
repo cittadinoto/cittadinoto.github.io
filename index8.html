@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Via Corrado Nicolaci</title>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="advancment">
+        <div id="advcontent">
+            <img src="circle.png" class="advimage" id="advimage1">
+            <img src="circle.png" class="advimage" id="advimage2">
+            <img src="circle.png" class="advimage" id="advimage3">
+            <img src="circle.png" class="advimage" id="advimage4">
+            <img src="circle.png" class="advimage" id="advimage5">
+            <img src="circle.png" class="advimage" id="advimage6">
+            <img src="circle.png" class="advimage" id="advimage7">
+            <img src="circle.png" class="advimage" id="advimage8">
+            <img src="circle.png" class="advimage" id="advimage9">
+
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattedrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+    <div id="contmain">
+        <h2 id="title">Via Corrado Nicolaci</h2>
+        <br>
+        <h4 id="subtitle">La Storia</h4>
+        <p>Via <b>Corrado Nicolaci</b>  è una strada situata nel centro storico di Noto, ed è considerata una delle vie più <b>importanti</b>  e <b>pittoresche</b>  della città. La via prende il nome dalla <b>famiglia Nicolaci</b> , una delle più importanti e influenti
+            di Noto, che possedeva diverse proprietà nella zona. La famiglia Nicolaci commissionò la costruzione di molte delle <b>opere d'arte</b> e dei <b>monumenti</b>  che caratterizzano la via, dando un importante contributo alla bellezza e alla fama di Noto. Tra
+            i monumenti più importanti presenti lungo Via Corrado Nicolaci vi è il <b>Palazzo Nicolaci</b>  di Villadorata, un palazzo  <b>barocco</b> costruito nel XVIII secolo. Il palazzo presenta una facciata decorata <b>con balconi in ferro battuto</b> , statue e affreschi,
+            ed è stato descritto come uno dei migliori esempi di <b>architettura barocca</b>  siciliana. Inoltre, lungo Via Corrado Nicolaci si trovano anche il <b>Palazzo Landolina</b> , un altro importante esempio di architettura barocca siciliana, e la  <b>Chiesa di Santa
+            Maria dell'Arco</b>, un luogo di culto del XVIII secolo che presenta un'interessante facciata decorata con stucchi e statue. Oltre ai monumenti e ai palazzi, Via Corrado Nicolaci è caratterizzata anche dai suoi <b>ristoranti, caffè e negozi</b>  di artigianato
+            locale, che la rendono una meta popolare per i turisti che visitano Noto. In sintesi, Via Corrado Nicolaci rappresenta un importante esempio di architettura <b>barocca</b>  siciliana e una <b>meta turistica</b>  di rilievo, grazie alla bellezza dei suoi monumenti
+            e alla vivacità delle sue attività commerciali.</p>
+
+        <br>
+
+        <h4 id="subtitle">Hai fame? </h4>
+        <h4 id="subtitle">Nessun problema qui sotto troverai Cafè, Bar, Ristoranti situati proprio in 'Via Corrado Nicolaci' </h4>
+
+
+
+        <ul>
+            <li><u> Caffè Sicilia</u> - è una celebre pasticceria situata nella stessa Via Corrado Nicolaci. Qui si possono gustare deliziose specialità siciliane come i famosi cannoli, la cassata, la granita e il gelato.</li>
+            <li><u>La Rosa Dei Venti</u> - si trova anche questo lungo la stessa via e offre una vasta selezione di prodotti dolci e salati, tra cui pasticcini, croissant e panini. Inoltre, il locale dispone di un bel giardino interno dove potersi rilassare.</li>
+            <li><u>Sotto le Stelle</u> - è un bar situato all'estremità della via, in cui si possono gustare ottime cioccolate calde, tè e caffè, accompagnati da golosi dolci fatti in casa.</li>
+            <li><u>La Vineria</u> - situata nella vicina Via Ducezio, è un locale che propone una selezione di vini locali e internazionali, accompagnati da taglieri di salumi e formaggi siciliani.</li>
+        </ul>
+        <br>
+
+        <div class="nextpage" onclick="window.open('index9.html', '_self')"> &rarr;</div>
+        <div class="prevpage" onclick="window.open('index7.html', '_self')"> &larr;</div>
+
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        advancment(8)
+    </script>
+</body>
+
+</html>

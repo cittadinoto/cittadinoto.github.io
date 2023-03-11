@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Città di Noto</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #bar {
+            box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.43);
+        }
+        
+        #mapbutton {
+            position: fixed;
+            width: 55%;
+            bottom: 2vh;
+            left: 22.5%;
+            z-index: 100;
+            background-color: #083D77;
+            color: white;
+            border-radius: 4vh;
+            height: 4vh;
+            line-height: 4vh;
+            text-align: center;
+        }
+        
+        #mapbutton2 {
+            position: fixed;
+            width: 55%;
+            bottom: 7vh;
+            left: 22.5%;
+            z-index: 100;
+            background-color: #083D77;
+            color: white;
+            border-radius: 4vh;
+            height: 4vh;
+            line-height: 4vh;
+            text-align: center;
+        }
+        
+        #mapbutton:hover {
+            cursor: pointer;
+        }
+        
+        #mapbutton2:hover {
+            cursor: pointer;
+        }
+        
+        @media screen and (min-width: 600px) {
+            #mapbutton {
+                width: 20%;
+                left: 25%;
+            }
+            #mapbutton2 {
+                width: 20%;
+                bottom: 2vh;
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+    <!-- mappa -->
+    <div id="map"></div>
+
+    <div id="mapbutton" onclick="window.open('https://www.google.com/maps/@36.8901981,15.0708601,16.5z')">
+        Apri su Google Maps
+    </div>
+    <div id="mapbutton2" onclick="window.open('https://www.google.com/maps/d/u/0/embed?mid=1OYRbg9Q_5h0ZpiWit7JzasTdh4y04NU&ehbc=2E312F&ll=36.890985105424065%2C15.070786049999976&z=18')">
+        Visualizza Itinerario
+    </div>
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZmF6ZWx1Y3ExIiwiYSI6ImNsZjJib3p3OTBoMWEzcm55ZTVnbTFmOTUifQ.HAwtFsb8DshwGztgQd9bHA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/fazelucq1/clf2buhyn002z01mroc2oy4pz/draft', // style URL
+            center: [15.072269, 36.892246],
+            bearing: 17.62,
+            zoom: 14,
+            pitch: 0.00
+        });
+
+        // markers
+
+        // porta ferdinandea
+        const marker1 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.073834, 36.890048])
+            .addTo(map);
+
+        // monastero san francesco d'assisi
+        const marker2 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.07250, 36.89069])
+            .addTo(map);
+
+        // palazzo ducezio
+        const marker3 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.070590, 36.890898])
+            .addTo(map);
+
+
+        // chiesa santa chiara
+        const marker4 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.07173, 36.89056])
+            .addTo(map);
+
+        // cattedrale di san nicolo
+        const marker5 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.07103, 36.89132])
+            .addTo(map);
+
+        // via corrado nicolacci
+        const marker6 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.06977, 36.89153])
+            .addTo(map);
+
+        // chiesa san carlo
+        const marker7 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.06931, 36.89122])
+            .addTo(map);
+
+        // fontana e chiesa san domenico
+        const marker8 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.06814, 36.89189])
+            .addTo(map);
+
+        // teatro tina di lorenzo
+        const marker9 = new mapboxgl.Marker({
+                color: '#083D77'
+            })
+            .setLngLat([15.06777, 36.89144])
+            .addTo(map);
+    </script>
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+        function sidebaron() {
+            let e = document.getElementById("sidebar")
+            if (document.querySelector("#menu span:nth-child(2)").style.width == "0%") {
+                document.getElementById("sidebarcont").style.display = "block"
+                e.style.display = "block"
+                e.style.animation = "sidebaron 0.6s forwards"
+                document.getElementById("mapbutton").style.display = "none"
+                document.getElementById("mapbutton2").style.display = "none"
+
+            } else {
+                e.style.animation = "sidebaroff 0.6s forwards"
+                document.getElementById("sidebarcont").style.display = "none"
+                setTimeout(function() {
+                    e.style.display = "none"
+                }, 600);
+                document.getElementById("mapbutton").style.display = "block"
+                document.getElementById("mapbutton2").style.display = "block"
+            }
+        }
+    </script>
+</body>
+
+</html>

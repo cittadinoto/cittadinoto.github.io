@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Città di Noto</title>
+    <style>
+        #bar {
+            box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.43);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bar">
+        <div class="barcontent" id="barcontent1">
+            <h2 id="title"> <a href="index.html">Città di Noto</a></h2>
+        </div>
+        <div class="barcontent" id="barcontent2">
+            <div id="menu" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sidebar">
+        <ul id="sidebarcont">
+            <a href="login.html" target="_blank" id="SecretLogin"></a>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="argomenti.html">Argomenti</a></li>
+            <li><a href="barocco.html">Barocco</a></li>
+            <li onclick="(showlink())"><a href="#" id="link">Tappe 	&#9660;</a></li>
+            <div id="hidden">
+                <li><a href="index2.html">-Porta Ferdinandea</a></li>
+                <li><a href="index3.html">-Chiesa s.Fracesco</a></li>
+                <li><a href="index4.html">-Chiesa s.Chiara</a></li>
+                <li><a href="index5.html">-Palazzo Ducezio</a></li>
+                <li><a href="index6.html">-Cattesrale s.Nicolò</a></li>
+                <li><a href="index7.html">-Chiesa s.Carlo</a></li>
+                <li><a href="index8.html">-Via Corrado Nicolaci</a></li>
+                <li><a href="index9.html">-Chiesa s.Domenico</a></li>
+                <li><a href="index10.html">-Teatro</a></li>
+            </div>
+
+            <li><a href="photos.html">Foto</a></li>
+            <li><a href="mappa.html">Mappa</a></li>
+
+        </ul>
+    </div>
+
+
+    <div id="contmain">
+
+        <div id="flexcontainer">
+            <div onclick="window.open('barocco.html', '_self')" style="background-image: url(baroc.jpg);">
+                <p>Barocco</p>
+            </div>
+            <div onclick="window.open('index2.html', '_self')" style="background-image: url(porta.jpg); ">
+                <p>Porta Ferdinandea</p>
+            </div>
+            <div onclick="window.open('index3.html', '_self')" style="background-image: url(sfran.jpg);">
+                <p>Chiesa s.Fracesco</p>
+            </div>
+            <div onclick="window.open('index4.html', '_self')" style="background-image: url(schia.jpg);">
+                <p>Chiesa s.Chiara </p>
+            </div>
+            <div onclick="window.open('index5.html', '_self')" style="background-image: url(ducez.jpg);">
+                <p>Palazzo Ducezio</p>
+            </div>
+            <div onclick="window.open('index6.html', '_self')" style="background-image: url(snico.jpg);">
+                <p>Cattesrale s.Nicolò</p>
+            </div>
+            <div onclick="window.open('index7.html', '_self')" style="background-image: url(scarl.jpg);">
+                <p>Chiesa s.Carlo</p>
+            </div>
+            <div onclick="window.open('index8.html', '_self')" style="background-image: url(corr.jpg);">
+                <p>Via Corrado Nicolaci</p>
+            </div>
+            <div onclick="window.open('index9.html', '_self')" style="background-image: url(sdome.jpg);">
+                <p>Chiesa s.Domenico</p>
+            </div>
+            <div onclick="window.open('index10.html', '_self')" style="background-image: url(teatro.jpg);">
+                <p>Teatro</p>
+            </div>
+        </div>
+
+
+        <div class="nextpage" onclick="window.open('index2.html', '_self')"> &rarr;</div>
+        <div class="prevpage" onclick="window.open('index.html', '_self')"> &larr;</div>
+
+        <br><br>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
