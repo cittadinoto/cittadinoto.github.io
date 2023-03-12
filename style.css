@@ -585,9 +585,15 @@ h2 a {
         margin: 0%;
         line-height: 2.5em;
     }
-    #photo1 img,
-    #photo2 img,
-    #photo3 img {
+#photo1 img,
+#photo2 img,
+#photo3 img,
+#photo4 img,
+#photo5 img,
+#photo6 img,
+#photo7 img,
+#photo8 img,
+#photo9 img {
         width: 90%;
         height: 25vh;
     }
@@ -628,9 +634,15 @@ h2 a {
         margin: 0%;
         line-height: 2.5em;
     }
-    #photo1 img,
-    #photo2 img,
-    #photo3 img {
+#photo1 img,
+#photo2 img,
+#photo3 img,
+#photo4 img,
+#photo5 img,
+#photo6 img,
+#photo7 img,
+#photo8 img,
+#photo9 img {
         width: 80%;
         height: 25vh;
     }
@@ -655,9 +667,15 @@ h2 a {
         margin: 0%;
         line-height: 2em;
     }
-    #photo1 img,
-    #photo2 img,
-    #photo3 img {
+#photo1 img,
+#photo2 img,
+#photo3 img,
+#photo4 img,
+#photo5 img,
+#photo6 img,
+#photo7 img,
+#photo8 img,
+#photo9 img{
         width: 80%;
         height: 40vh;
     }
