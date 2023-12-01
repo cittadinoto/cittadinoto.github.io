@@ -322,33 +322,3 @@ function contimg(n) {
 
 
 
-//secret login
-let key = "pingu66"
-
-var button = document.getElementById("buttonLogin");
-var clickCount = 0;
-
-button.addEventListener("click", function() {
-    clickCount++;
-    console.log(clickCount)
-});
-
-function login() {
-    let password = document.getElementById("password").value
-
-    if (password == key) {
-        document.getElementById("clear").style.display = "none"
-        document.body.style.backgroundColor = "white"
-        document.getElementById("true").style.visibility = "visible"
-
-    } else {
-        alert("la password inserita è errata")
-        if (clickCount == 4) {
-            clickCount = 0
-            document.getElementById("clear").style.display = "none"
-            document.body.style.backgroundColor = "white"
-            document.getElementById("basta").style.visibility = "visible"
-        }
-
-    }
-}
